@@ -17,6 +17,6 @@ jobs:
       steps:
       - name: find manifest and lock files and upload them as artifacts
         run: |
-          find . -name "pom.xml" -o -name "build.gradle" -o -name "package.json" -o -name "requirements.txt" -o -name "poetry.lock" -o -name "pyproject.toml" -o -name "Cargo.toml" -o -name "go.mod" -o -name "go.sum" -o -name "Gemfile" -o -name "Gemfile.lock" -o -name "composer.json" -o -name "composer.lock" -o -name "mix.exs" -o -nam
+          find . -name "pom.xml" -o -name "build.gradle" -o -name "package.json" -o -name "requirements.txt" -o -name "poetry.lock" -o -name "pyproject.toml" -o -name "Cargo.toml" -o -name "go.mod" -o -name "go.sum" -o -name "Gemfile" -o -name "Gemfile.lock" -o -name "composer.json" -o -name "composer.lock" -o -name "mix.exs" -o -name
 
 
