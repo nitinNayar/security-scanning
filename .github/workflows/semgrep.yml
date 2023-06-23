@@ -22,9 +22,9 @@ jobs:
     if: (github.actor != 'dependabot[bot]')
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          find . -name "pom.xml" -o -name "build.gradle" -o -name "package.json" -o -name "requirements.txt" -o -name "poetry.lock" -o -name "pyproject.toml" -o -name "Cargo.toml" -o -name "go.mod" -o -name "go.sum" -o -name "Gemfile" -o -name "Gemfile.lock" -exec cp "{}" .  \;
-      - run: ls -lah
-      - run: git add .
-      - run: git commit -m "added manifests & lockfiles"
+#       - run: |
+#           find . -name "pom.xml" -o -name "build.gradle" -o -name "package.json" -o -name "requirements.txt" -o -name "poetry.lock" -o -name "pyproject.toml" -o -name "Cargo.toml" -o -name "go.mod" -o -name "go.sum" -o -name "Gemfile" -o -name "Gemfile.lock" -exec cp "{}" .  \;
+#       - run: ls -lah
+#       - run: git add .
+#       - run: git commit -m "added manifests & lockfiles"
       - run: semgrep ci
